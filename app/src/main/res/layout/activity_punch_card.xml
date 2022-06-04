@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white2">
+
+    <com.graduation.healthapp.ui.login.TitleLayout
+        android:id="@+id/titlebar"
+        app:leftIcon="@mipmap/left_arrow"
+        app:text="打卡"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+    </com.graduation.healthapp.ui.login.TitleLayout>
+
+    <com.necer.calendar.Miui10Calendar
+        android:id="@+id/miui10Calendar"
+        android:layout_margin="@dimen/dp_5"
+        android:background="@color/white2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints,NotSibling">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:background="@color/white2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.necer.calendar.Miui10Calendar>
+
+    <Button
+        android:id="@+id/punch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp_16"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:text="打卡" />
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'org.greenrobot.greendao'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.graduation.healthapp"
+        minSdk 23
+        targetSdk 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    greendao {
+        schemaVersion 1
+        daoPackage 'com.graduation.healthapp.gen'
+        targetGenDir 'src/main/java'
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //数据库
+    implementation 'org.greenrobot:greendao:3.3.0'
+    //权限
+    implementation 'com.hjq:xxpermissions:10.6'
+    //阿里gson
+    implementation 'com.alibaba:fastjson:1.1.72.android'
+    //图片加载
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    //轮播图
+    implementation 'com.github.xiaohaibin:XBanner:androidx_v1.2.6'
+    //图片选择器
+    implementation 'io.github.lucksiege:pictureselector:v3.0.9'
+    //图片压缩
+    implementation 'io.github.lucksiege:compress:v3.0.3'
+    //bmob云服务器存储
+    implementation 'io.github.bmob:android-sdk:3.8.11'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.8'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.8.1'
+    implementation 'com.squareup.okio:okio:2.2.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    //播放器
+    implementation 'com.github.dueeeke.dkplayer:player-ijk:3.2.6'
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-java:3.2.6'
+    implementation 'com.github.dueeeke.dkplayer:dkplayer-ui:3.2.6'
+    implementation 'com.github.dueeeke.dkplayer:player-exo:3.2.6'
+    implementation 'com.github.dueeeke.dkplayer:player-ijk:3.2.6'
+    implementation 'com.github.dueeeke.dkplayer:videocache:3.2.6'
+    //日历
+    implementation 'com.necer.ncalendar:ncalendar:5.0.2'
+    //图表
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+    //状态栏
+    implementation 'com.geyifeng.immersionbar:immersionbar:3.2.2'
+    //选择器
+    //选择器的基础窗体
+    implementation 'com.github.gzu-liyujiang.AndroidPicker:Common:4.0.1'
+    //滚轮选择器的滚轮控件
+    implementation 'com.github.gzu-liyujiang.AndroidPicker:WheelView:4.0.1'
+    //单项/数字、二三级联动、日期/时间等滚轮选择器
+    implementation 'com.github.gzu-liyujiang.AndroidPicker:WheelPicker:4.0.1'
+    //日历日期选择器：
+    implementation 'com.github.gzu-liyujiang.AndroidPicker:CalendarPicker:4.0.1'
+    //图片缩放
+    implementation 'com.github.chrisbanes:PhotoView:1.3.0'
+}

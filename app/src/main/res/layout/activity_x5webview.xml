@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:id="@+id/head_group"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/head_lefticon"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_15"
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+            </ImageView>
+            <TextView
+                android:id="@+id/head_text"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_16"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </TextView>
+            <ImageView
+                android:id="@+id/head_righticon"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_15"
+                android:paddingBottom="@dimen/dp_15"
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+            </ImageView>
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/forum_context"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <!--进度-->
+    <FrameLayout
+        android:id="@+id/progress"
+        android:background="#99cccccc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_140"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ProgressBar>
+    </FrameLayout>
+
+</FrameLayout>

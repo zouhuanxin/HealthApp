@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/title"
+        android:text="饮食记录"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:padding="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    </TextView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.necer.calendar.Miui10Calendar
+                android:id="@+id/miui10Calendar"
+                android:layout_margin="@dimen/dp_5"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                android:background="@color/white2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints,NotSibling">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:background="@color/white2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.necer.calendar.Miui10Calendar>
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@id/miui10Calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="饮食"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold"
+                    android:padding="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="MissingConstraints">
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/foodlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <TextView
+                    android:text="分析"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold"
+                    android:padding="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="MissingConstraints">
+                </TextView>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chart"
+                    android:layout_margin="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_200" />
+
+                <TextView
+                    android:text="为你推荐"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/sp_14"
+                    android:textStyle="bold"
+                    android:padding="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="MissingConstraints">
+                </TextView>
+
+                <HorizontalScrollView
+                    android:padding="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                       <com.graduation.healthapp.ui.find.RoundedImageView
+                           android:id="@+id/tj_item1"
+                           app:rRadius="@dimen/dp_10"
+                           android:layout_width="@dimen/dp_150"
+                           android:layout_height="@dimen/dp_100">
+                       </com.graduation.healthapp.ui.find.RoundedImageView>
+
+                       <com.graduation.healthapp.ui.find.RoundedImageView
+                           android:id="@+id/tj_item2"
+                           android:layout_marginLeft="@dimen/dp_10"
+                           app:rRadius="@dimen/dp_10"
+                           android:layout_width="@dimen/dp_150"
+                           android:layout_height="@dimen/dp_100">
+                       </com.graduation.healthapp.ui.find.RoundedImageView>
+
+                       <com.graduation.healthapp.ui.find.RoundedImageView
+                           android:id="@+id/tj_item3"
+                           android:layout_marginLeft="@dimen/dp_10"
+                           app:rRadius="@dimen/dp_10"
+                           android:layout_width="@dimen/dp_150"
+                           android:layout_height="@dimen/dp_100">
+                       </com.graduation.healthapp.ui.find.RoundedImageView>
+
+                   </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/home_item.xml" value="0.23385416666666667" />
+        <entry key="app/src/main/res/drawable/home_item1.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/home_item2.xml" value="0.23385416666666667" />
+        <entry key="app/src/main/res/drawable/home_item3.xml" value="0.23385416666666667" />
+        <entry key="app/src/main/res/drawable/home_item4.xml" value="0.13385416666666666" />
+        <entry key="app/src/main/res/drawable/home_item5.xml" value="0.13385416666666666" />
+        <entry key="app/src/main/res/drawable/home_item6.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/home_item7.xml" value="0.22760416666666666" />
+        <entry key="app/src/main/res/drawable/login_edittext_phone.xml" value="0.23385416666666667" />
+        <entry key="app/src/main/res/drawable/splash_icon.xml" value="0.23385416666666667" />
+        <entry key="app/src/main/res/drawable/verifycomponent_item_edit.xml" value="0.23385416666666667" />
+        <entry key="app/src/main/res/layout/activity_course.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_fast_register.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/layout/activity_food_list.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_my_topic_and_video.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_nurtrtion_analysis.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_pass_word_login.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/layout/activity_punch_card.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_push.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_smalclass.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_smalclass_details.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/layout/activity_topic_details.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_update_user_info.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_verify_code.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_video_details.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/activity_x5webview.xml" value="0.2381835032437442" />
+        <entry key="app/src/main/res/layout/course_content_item.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/find_content_item.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/fragment_course.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/fragment_find.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_home_item.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/layout/fragment_my.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/layout/fragment_record.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/home_query_item.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/home_recommend_item.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/item_video.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/local_video_play_activity.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/my_grid_item.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/layout/photoview.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/push_image_item.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/record_item.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/smalclass_item.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/title_center_view.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/layout/title_imageview.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/layout/title_imageview2.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/layout/title_left_view.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/layout/title_right_view.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/layout/title_textview.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/layout/topicdetails_item.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/topicdetails_item2.xml" value="0.21145833333333333" />
+        <entry key="app/src/main/res/layout/verifycomponent_item.xml" value="0.21770833333333334" />
+        <entry key="app/src/main/res/layout/videoview_item.xml" value="0.21145833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

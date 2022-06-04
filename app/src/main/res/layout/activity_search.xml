@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.graduation.healthapp.ui.login.TitleLayout
+        android:id="@+id/titlebar"
+        app:leftIcon="@mipmap/left_arrow"
+        app:text="搜索"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+    </com.graduation.healthapp.ui.login.TitleLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:paddingBottom="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10">
+        <com.graduation.healthapp.ui.find.RoundedEditText
+            android:id="@+id/input"
+            android:hint="请输入菜品名称"
+            android:maxLines="1"
+            app:rRadius="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:textSize="@dimen/sp_10"
+            android:background="#f1f1f1"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.graduation.healthapp.ui.find.RoundedEditText>
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/bt1"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_gravity="right|center"
+            android:src="@mipmap/search">
+        </androidx.constraintlayout.utils.widget.ImageFilterView>
+    </FrameLayout>
+
+    <!--进度-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/queryres"
+            android:padding="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+        <ProgressBar
+            android:id="@+id/progress"
+            android:visibility="gone"
+            android:background="#99cccccc"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_140"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ProgressBar>
+    </FrameLayout>
+
+</LinearLayout>

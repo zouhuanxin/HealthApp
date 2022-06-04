@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="0px"
+    app:cardUseCompatPadding="false"
+    android:padding="@dimen/dp_10"
+    android:layout_margin="@dimen/dp_10"
+    app:cardCornerRadius="@dimen/dp_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50">
+
+            <com.graduation.healthapp.ui.find.RoundedImageView
+                android:id="@+id/portrait"
+                app:rRadius="@dimen/dp_500"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_gravity="center"
+                android:src="@mipmap/inform"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30">
+            </com.graduation.healthapp.ui.find.RoundedImageView>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:text="name"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_14"
+                android:gravity="center|left"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/content"
+            android:textSize="@dimen/sp_12"
+            android:padding="@dimen/dp_10"
+            android:maxEms="150"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imaegs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:orientation="horizontal">
+
+            <com.graduation.healthapp.ui.find.RoundedTextView
+                android:id="@+id/ht"
+                android:text="# 参与话题"
+                android:textColor="#39b3a6"
+                android:gravity="center"
+                android:textSize="@dimen/sp_12"
+                android:background="#e2fbf5"
+                app:rRadius="@dimen/dp_10"
+                android:layout_margin="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30">
+            </com.graduation.healthapp.ui.find.RoundedTextView>
+
+            <ImageView
+                android:id="@+id/sc"
+                android:layout_marginRight="@dimen/dp_40"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center|right"
+                android:src="@mipmap/sc1">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/dz"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center|right"
+                android:src="@mipmap/dz1">
+            </ImageView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <ImageView
+            android:id="@+id/leftarrow"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:src="@mipmap/left_arrow"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20">
+        </ImageView>
+
+        <TextView
+            android:textColor="#000000"
+            android:gravity="center|left"
+            android:text="发动态"
+            android:textSize="@dimen/sp_12"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+        </TextView>
+
+        <TextView
+            android:id="@+id/push"
+            android:layout_margin="@dimen/dp_10"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="发布"
+            android:textSize="@dimen/sp_12"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gosmalclass"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <TextView
+            android:id="@+id/cyht"
+            android:layout_margin="@dimen/dp_10"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="# 参与话题"
+            android:textSize="@dimen/sp_12"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        </TextView>
+
+        <TextView
+            android:layout_margin="@dimen/dp_10"
+            android:gravity="center|right"
+            android:text="选择合适的话题会收获更多的赞"
+            android:textSize="@dimen/sp_8"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+        </TextView>
+
+        <ImageView
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:src="@mipmap/right_arrow"
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="@dimen/dp_10">
+        </ImageView>
+
+    </LinearLayout>
+
+    <com.graduation.healthapp.ui.find.RoundedLinearLayout
+        app:rRadius="@dimen/dp_10"
+        android:layout_margin="@dimen/dp_15"
+        android:background="#f5f6fa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/comment"
+            android:maxEms="300"
+            android:textSize="@dimen/sp_16"
+            android:layout_margin="@dimen/dp_10"
+            android:background="#f5f6fa"
+            android:hint="添加介绍......"
+            android:maxHeight="@dimen/dp_200"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </EditText>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </com.graduation.healthapp.ui.find.RoundedLinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <ImageView
+            android:id="@+id/addimage"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:src="@mipmap/addimage"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25">
+        </ImageView>
+
+    </LinearLayout>
+
+</LinearLayout>

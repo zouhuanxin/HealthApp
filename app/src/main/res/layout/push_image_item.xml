@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.graduation.healthapp.ui.find.RoundedImageView
+        android:id="@+id/push_image_item"
+        app:rRadius="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100">
+    </com.graduation.healthapp.ui.find.RoundedImageView>
+
+    <ImageView
+        android:id="@+id/delete"
+        android:src="@mipmap/delete"
+        android:layout_margin="@dimen/dp_5"
+        android:layout_gravity="right|top"
+        android:layout_width="@dimen/dp_15"
+        android:layout_height="@dimen/dp_15">
+    </ImageView>
+
+</FrameLayout>

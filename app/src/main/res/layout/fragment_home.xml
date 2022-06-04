@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/white2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.graduation.healthapp.ui.home.HomeHeadComponent
+            android:id="@+id/home_homeheadComponent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"></com.graduation.healthapp.ui.home.HomeHeadComponent>
+
+        <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/home_line1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_85"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_15"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/cqpp"
+                    android:layout_width="@dimen/dp_65"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_item1">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/scan"></ImageView>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_20"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/dp_5"
+                        android:text="餐前拍拍"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_10"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lykq"
+                    android:layout_width="@dimen/dp_65"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10"
+                    android:visibility="gone">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_item2">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/record"></ImageView>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_20"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/dp_5"
+                        android:text="录音开启"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_10"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/wzss"
+                    android:layout_width="@dimen/dp_65"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_item4">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/weight"></ImageView>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_20"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/dp_5"
+                        android:text="文字搜索"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_10"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hhb"
+                    android:layout_width="@dimen/dp_65"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_item3">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/list"></ImageView>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_20"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/dp_5"
+                        android:text="红黑榜"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_10"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/swcz"
+                    android:layout_width="@dimen/dp_65"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_item5">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/help"></ImageView>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_20"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/dp_5"
+                        android:text="食物称重"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_10"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cnc"
+                    android:layout_width="@dimen/dp_65"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_item6">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/naicha"></ImageView>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_20"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/dp_5"
+                        android:text="查奶茶"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_10"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fstj"
+                    android:layout_width="@dimen/dp_65"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_item7">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/fushi"></ImageView>
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_20"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/dp_5"
+                        android:text="辅食推荐"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_10"></TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/smartscrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_200"
+                    android:layout_margin="@dimen/dp_15"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/home_guide"></ImageView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    app:cardCornerRadius="@dimen/dp_10"
+                    app:cardElevation="0px"
+                    app:cardUseCompatPadding="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#eef9f9"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp_10"
+                            android:text="精选活动"
+                            android:textColor="#909aa5"
+                            android:textSize="@dimen/sp_12"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp_10"
+                            android:text="马上参加，GOGOGO!"
+                            android:textColor="#383f51"
+                            android:textSize="@dimen/sp_18"
+                            android:textStyle="bold"></TextView>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recommendactivity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    app:cardCornerRadius="@dimen/dp_10"
+                    app:cardElevation="0px"
+                    app:cardUseCompatPadding="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#fefaea"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp_10"
+                            android:text="爱健康优选"
+                            android:textColor="#909aa5"
+                            android:textSize="@dimen/sp_12"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp_10"
+                            android:text="高能推荐，立即购买！"
+                            android:textColor="#383f51"
+                            android:textSize="@dimen/sp_18"
+                            android:textStyle="bold"></TextView>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recommendfood"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:layout_marginRight="@dimen/dp_15"
+                    android:layout_marginBottom="@dimen/dp_15"
+                    app:cardCornerRadius="@dimen/dp_10"
+                    app:cardElevation="0px"
+                    app:cardUseCompatPadding="false">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#eef9f9"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp_10"
+                            android:text="当季美味"
+                            android:textColor="#909aa5"
+                            android:textSize="@dimen/sp_12"></TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp_10"
+                            android:text="美味大餐提前准备"
+                            android:textColor="#383f51"
+                            android:textSize="@dimen/sp_18"
+                            android:textStyle="bold"></TextView>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recommendgoods"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <com.graduation.healthapp.ui.find.RoundedLinearLayout
+        android:id="@+id/querylist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:rRadius="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:text="查询结果"
+            android:textColor="@color/purple_200"
+            android:textSize="@dimen/sp_16"></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/queryres"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+    </com.graduation.healthapp.ui.find.RoundedLinearLayout>
+
+    <!--进度-->
+    <FrameLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99cccccc"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="@dimen/dp_140"></ProgressBar>
+    </FrameLayout>
+
+</FrameLayout>

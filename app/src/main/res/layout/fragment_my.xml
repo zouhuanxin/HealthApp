@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2">
+
+    <com.graduation.healthapp.ui.find.RoundedTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_200"
+        android:background="@color/purple_200"
+        app:rBottomRadius="@dimen/dp_60">
+    </com.graduation.healthapp.ui.find.RoundedTextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="个人中心"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp_20"
+                android:textStyle="bold"
+                android:padding="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="0px"
+                app:cardUseCompatPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:layout_margin="@dimen/dp_15"
+                app:cardCornerRadius="@dimen/dp_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_5">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_80"
+                        android:orientation="horizontal">
+
+                        <com.graduation.healthapp.ui.find.RoundedImageView
+                            android:id="@+id/portrait"
+                            app:rRadius="@dimen/dp_500"
+                            android:layout_width="@dimen/dp_50"
+                            android:layout_height="@dimen/dp_50"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="@dimen/dp_20"
+                            android:src="@mipmap/ic_launcher"></com.graduation.healthapp.ui.find.RoundedImageView>
+
+                        <TextView
+                            android:id="@+id/username"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|left"
+                            android:padding="@dimen/dp_15"
+                            android:text="用户名"
+                            android:textSize="@dimen/sp_17"
+                            android:textStyle="bold"></TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_60"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/ljdk"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:text="--\n累计打卡"></TextView>
+
+                        <TextView
+                            android:id="@+id/jrkll"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:text="--\n今日卡路里"></TextView>
+
+                        <TextView
+                            android:id="@+id/pm"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:text="--\n排名"></TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="0px"
+                app:cardUseCompatPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_15"
+                app:cardCornerRadius="@dimen/dp_10">
+
+                <GridView
+                    android:id="@+id/gridview"
+                    android:paddingTop="@dimen/dp_10"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="4">
+                </GridView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="0px"
+                android:layout_marginBottom="@dimen/dp_15"
+                app:cardUseCompatPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_15"
+                app:cardCornerRadius="@dimen/dp_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.graduation.healthapp.ui.my.MyItem
+                        android:id="@+id/ysbgsf"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_15"
+                        app:leftIcon="@mipmap/jkfa"
+                        app:rightIcon="@mipmap/right_arrow"
+                        app:text="饮食分析报告"></com.graduation.healthapp.ui.my.MyItem>
+
+                    <com.graduation.healthapp.ui.my.MyItem
+                        android:id="@+id/zsjd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_15"
+                        app:leftIcon="@mipmap/ysfa"
+                        app:rightIcon="@mipmap/right_arrow"
+                        app:text="知识竞答"></com.graduation.healthapp.ui.my.MyItem>
+
+                    <com.graduation.healthapp.ui.my.MyItem
+                        android:id="@+id/rqsp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_15"
+                        app:leftIcon="@mipmap/bzsp"
+                        app:rightIcon="@mipmap/right_arrow"
+                        app:text="人气食谱"></com.graduation.healthapp.ui.my.MyItem>
+
+                    <com.graduation.healthapp.ui.my.MyItem
+                        android:id="@+id/cancel_system"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_15"
+                        app:leftIcon="@mipmap/cancel"
+                        app:rightIcon="@mipmap/right_arrow"
+                        app:text="退出登陆"></com.graduation.healthapp.ui.my.MyItem>
+
+                    <com.graduation.healthapp.ui.my.MyItem
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_50"
+                        android:layout_marginLeft="@dimen/dp_15"
+                        android:layout_marginRight="@dimen/dp_15"
+                        app:leftIcon="@mipmap/bz"
+                        app:rightIcon="@mipmap/right_arrow"
+                        app:text="帮助与反馈"></com.graduation.healthapp.ui.my.MyItem>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

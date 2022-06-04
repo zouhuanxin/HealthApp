@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white2">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginBottom="@dimen/dp_50"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.graduation.healthapp.ui.login.TitleLayout
+                android:id="@+id/bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                app:leftIcon="@mipmap/left_arrow"
+                app:text="动态详情">
+            </com.graduation.healthapp.ui.login.TitleLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:orientation="horizontal">
+
+                <com.graduation.healthapp.ui.find.RoundedImageView
+                    android:id="@+id/portrait"
+                    app:rRadius="@dimen/dp_500"
+                    android:src="@mipmap/inform"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_gravity="center|left">
+                </com.graduation.healthapp.ui.find.RoundedImageView>
+
+                <LinearLayout
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:gravity="center|left"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/sp_14"
+                        android:text="name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:gravity="center|left"
+                        android:textColor="#cccccc"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/sp_12"
+                        android:text="name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/content"
+                android:text="文本内容"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/images"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <com.graduation.healthapp.ui.find.RoundedTextView
+                android:id="@+id/ht"
+                android:text="# 参与话题"
+                android:textColor="#39b3a6"
+                android:gravity="center"
+                android:textSize="@dimen/sp_12"
+                android:background="#e2fbf5"
+                app:rRadius="@dimen/dp_10"
+                android:layout_margin="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_10"
+                android:paddingRight="@dimen/dp_10"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30">
+            </com.graduation.healthapp.ui.find.RoundedTextView>
+
+            <TextView
+                android:text="最新评论"
+                android:textStyle="bold"
+                android:textSize="@dimen/sp_14"
+                android:paddingLeft="@dimen/dp_10"
+                android:gravity="center|left"
+                android:background="#f1f1f1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40">
+            </TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:background="#f1f1f1"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:orientation="horizontal">
+        <com.graduation.healthapp.ui.find.RoundedEditText
+            android:id="@+id/comment_input"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="请输入"
+            style="@style/Widget.AppCompat.EditText"
+            android:gravity="center|left"
+            android:textSize="@dimen/sp_12"
+            android:padding="@dimen/dp_10"
+            app:rRadius="@dimen/dp_5"
+            android:background="#f7f7f7"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_7"
+            android:layout_marginBottom="@dimen/dp_7">
+        </com.graduation.healthapp.ui.find.RoundedEditText>
+
+        <TextView
+            android:id="@+id/comment_send"
+            android:textSize="@dimen/sp_14"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="发送"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+</FrameLayout>

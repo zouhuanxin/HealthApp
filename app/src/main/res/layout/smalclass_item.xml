@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/dp_10"
+    android:id="@+id/item"
+    android:orientation="horizontal">
+
+    <com.graduation.healthapp.ui.find.RoundedImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:src="@mipmap/inform"
+        app:rRadius="@dimen/dp_5">
+    </com.graduation.healthapp.ui.find.RoundedImageView>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="name"
+            android:textColor="#000000"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold">
+        </TextView>
+        <TextView
+            android:id="@+id/introduce"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="name"
+            android:textColor="#cccccc"
+            android:textSize="@dimen/dp_12"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

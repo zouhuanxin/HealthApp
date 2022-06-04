@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white2"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.graduation.healthapp.ui.login.TitleLayout
+        android:id="@+id/titlebar"
+        app:leftIcon="@mipmap/left_arrow"
+        app:text="基本信息"
+        app:rightIcon="@mipmap/aircraft_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+    </com.graduation.healthapp.ui.login.TitleLayout>
+
+
+    <!--头像-->
+    <com.graduation.healthapp.ui.find.RoundedImageView
+        android:id="@+id/portrait"
+        android:layout_marginTop="@dimen/dp_20"
+        app:rRadius="@dimen/dp_500"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60">
+    </com.graduation.healthapp.ui.find.RoundedImageView>
+
+    <!--手机号不可以修改，默认显示-->
+    <com.graduation.healthapp.ui.my.FixedEditText
+        android:id="@+id/phone"
+        android:padding="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        app:rRadius="@dimen/dp_10"
+        android:enabled="false"
+        android:background="#f1f1f1"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+    </com.graduation.healthapp.ui.my.FixedEditText>
+
+    <!--用户名称，默认注册的时候与手机号一样-->
+    <com.graduation.healthapp.ui.my.FixedEditText
+        android:id="@+id/username"
+        android:padding="@dimen/dp_10"
+        android:maxLines="1"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        app:rRadius="@dimen/dp_10"
+        android:background="#f1f1f1"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+    </com.graduation.healthapp.ui.my.FixedEditText>
+
+    <!--生日，出生日期-->
+    <com.graduation.healthapp.ui.my.FixedEditText
+        android:id="@+id/brithday"
+        android:padding="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        app:rRadius="@dimen/dp_10"
+        android:focusable="false"
+        android:background="#f1f1f1"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+    </com.graduation.healthapp.ui.my.FixedEditText>
+
+    <!--地址-->
+    <com.graduation.healthapp.ui.my.FixedEditText
+        android:id="@+id/address"
+        android:padding="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        app:rRadius="@dimen/dp_10"
+        android:maxLines="1"
+        android:background="#f1f1f1"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+    </com.graduation.healthapp.ui.my.FixedEditText>
+
+    <!--性别-->
+    <com.graduation.healthapp.ui.my.FixedEditText
+        android:id="@+id/sex"
+        android:padding="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        app:rRadius="@dimen/dp_10"
+        android:focusable="false"
+        android:background="#f1f1f1"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+    </com.graduation.healthapp.ui.my.FixedEditText>
+
+</LinearLayout>

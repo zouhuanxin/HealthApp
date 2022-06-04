@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white2"
+    android:orientation="vertical">
+
+    <com.graduation.healthapp.ui.login.TitleLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        app:leftIcon="@mipmap/left_arrow"
+        app:text="类别详情">
+    </com.graduation.healthapp.ui.login.TitleLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100">
+        <com.graduation.healthapp.ui.find.RoundedImageView
+            android:id="@+id/back"
+            app:blur="1"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </com.graduation.healthapp.ui.find.RoundedImageView>
+
+        <com.graduation.healthapp.ui.find.RoundedImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            app:rRadius="@dimen/dp_5"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/dp_10">
+        </com.graduation.healthapp.ui.find.RoundedImageView>
+
+        <TextView
+            android:id="@+id/type_name"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_50"
+            android:layout_gravity="bottom"
+            android:text="标题"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

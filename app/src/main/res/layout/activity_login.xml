@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="@color/white2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_100"
+            android:gravity="center|left"
+            android:padding="@dimen/dp_20"
+            android:text="你好\n欢迎来到Health!"
+            android:textColor="#000000"
+            android:textSize="@dimen/dp_26"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:background="@drawable/login_edittext_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:hint="请输入手机号"
+            android:maxLength="11"
+            android:phoneNumber="true"
+            android:textColorHint="#B7B7B7"
+            android:padding="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:gravity="center|left"
+            android:selectAllOnFocus="true"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:enabled="false"
+            android:text="获取短信验证码" />
+        
+        <LinearLayout
+            android:layout_margin="@dimen/dp_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pass_login"
+                android:text="密码登陆"
+                android:textColor="#999999"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </TextView>
+
+            <TextView
+                android:id="@+id/fast_register"
+                android:textColor="#3291F8"
+                android:gravity="right"
+                android:text="快速注册"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintVertical_bias="0.3" />
+
+</FrameLayout>
